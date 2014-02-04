@@ -1,0 +1,16 @@
+Installation
+------------
+Drop all .php files into the Smarty plugin directory.
+
+Testing
+-------
+Use purl_test.tpl in a blank page.
+
+License
+-------
+shared.url_parameters.php: LGPL
+the rest: MIT license
+
+Author
+------
+Paul Kremer (pkremer !At! spurious !DOT! biz)

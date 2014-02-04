@@ -1,0 +1,28 @@
+Tue Feb 2014
+   * new version 2.0
+   * changed default behaviour of ppurl: it now automatically creates
+     GET parameters with correctly escaped &amp; for valid html
+     apurl does not do this and preserves the old behaviour, which means
+     that the template variable typically should be piped through an escape
+     routing like the modifier |escape:'html'
+   * code is now licensed under the MIT license 
+
+Tue Jul 5 2005
+   * new upstream version 1.3
+   * fixed URL detection when running PHP in CGI mode
+
+Fri May 13 2005
+   * new upstream version 1.2
+   * fixed problems with uninitialized '$this' when doing
+     $this->_get_plugin_filepath
+   * indentation cleanup
+   * imported source into CVS
+   * minor fixes for uninitialized variable warnings
+
+Sun Sep 28 19:41:35 CEST 2003
+   * new upstream version 1.1
+   * added simple support for GET style arrays ([]). Thx to Graeme
+     Merrall for the idea
+
+Thu Mar 13 22:02:43 CEST 2003
+   * initial release (version 1.0)
