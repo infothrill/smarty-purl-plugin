@@ -5,8 +5,8 @@
  * File:     function.ppurl.php
  * Type:     function
  * Name:     ppurl
- * Version:  2.0
- * Date:     February, 2014
+ * Version:  2.0.1
+ * Date:     March, 2014
  * Purpose:  print an URL with added/deleted key/value pairs
  *           Example:
  *           {ppurl url="index.php?l=EN" key="print" value="1"}
@@ -33,7 +33,18 @@
 
 function smarty_function_ppurl($params, &$smarty)
 {
-	require_once $smarty->_get_plugin_filepath('shared','url_parameters');
+    if (method_exists($smarty, '_get_plugin_filepath')) {
+        //handle with Smarty version 2
+        require_once $smarty->_get_plugin_filepath('shared','url_parameters');
+    } else {
+        //handle with Smarty version 3 beta 8
+        foreach ($smarty->plugins_dir as $value) {
+            $filepath = $value ."/shared.url_parameters.php";
+            if (file_exists($filepath)) {
+                require_once $filepath;
+            }
+        }
+    } 
 	extract($params);
 	if (!isset($url)) {
 		$nurl = new Smarty_Url_Parameters();

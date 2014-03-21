@@ -1,3 +1,7 @@
+Fri March 2014
+   * version 2.0.1
+   * Minimal fixes to make the plugin work with Smarty 3.1+
+
 Tue Feb 2014
    * new version 2.0
    * changed default behaviour of ppurl: it now automatically creates
