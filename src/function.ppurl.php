@@ -5,8 +5,6 @@
  * File:     function.ppurl.php
  * Type:     function
  * Name:     ppurl
- * Version:  2.0.1
- * Date:     March, 2014
  * Purpose:  print an URL with added/deleted key/value pairs
  *           Example:
  *           {ppurl url="index.php?l=EN" key="print" value="1"}

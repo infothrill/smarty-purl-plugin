@@ -1,3 +1,7 @@
+Sun Feb 2020
+   * version 2.1.0
+   * Fix deprecation of php4_constructors
+
 Fri March 2014
    * version 2.0.1
    * Minimal fixes to make the plugin work with Smarty 3.1+

@@ -5,8 +5,6 @@
  * File:     function.apurl.php
  * Type:     function
  * Name:     apurl
- * Version:  2.0.1
- * Date:     March, 2014
  * Purpose:  modify key/value pairs of a URL
  *           Example:
  *           {apurl var="test" url="index.php?l=EN" key="print" value="1"}

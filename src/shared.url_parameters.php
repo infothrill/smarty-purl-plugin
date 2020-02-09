@@ -1,7 +1,5 @@
 <?php
 /***
- * $Id: shared.url_parameters.php,v 1.2 2005/07/05 14:30:07 pkremer Exp $
- *
  * Copyright (C) 2001, 2002  Vincent Oostindie
  * Copyright (C) 2004, 2005 Paul Kremer
  *
@@ -153,7 +151,7 @@ class Smarty_Url_Parameters
      * @param $url the optional URL (a string) to base the Url on
      * @param $parameters the optional URL (a string) with parameters only
      ***/
-    function Smarty_Url_Parameters($url = '', $parameters = '')
+    function __construct($url = '', $parameters = '')
     {
 		$this->seenArrays = array();
         $this->setUrl($url, $parameters);
